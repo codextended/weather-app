@@ -1,7 +1,7 @@
 import request from "request";
 
 export const weather = (city, callback) => {
-    const url = 'http://api.openweathermap.org/data/2.5/weather?q='+ encodeURIComponent(city) +'&units=metric&appid=02bddf0d08c7b3f6da6489a882c2f157';
+    const url = 'http://api.openweathermap.org/data/2.5/weather?q='+ encodeURIComponent(city) +'&units=metric&appid={"Removed Api Secret Code"}';
 
     request({ url, json:true }, (error, {body}) => {
         if(error) {
